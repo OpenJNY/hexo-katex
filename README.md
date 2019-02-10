@@ -36,3 +36,23 @@ $$
 E = m * c^2
 $$
 ```
+
+## Macros
+
+You can use macors to help writing math equations, which should be specified in '_config.yml'.
+
+```
+katex:
+  css: true
+  macros:
+    "\\foo": "\\mathrm{foo}"
+    "\\set": "\\left\\{ #1 \\right\\}"
+```
+
+The above configuration, for instance, makes it possible to write as follows:
+
+```
+$$
+\set{ \foo(x)_n }_{n=1}^N
+$$
+```
