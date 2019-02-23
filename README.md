@@ -15,7 +15,7 @@ Then install hexo-katex-macro.
 
 ```
 # cd your-hexo-project
-git submodule add https://github.com/OpenJNY/hexo-katex-macro
+git submodule add git@github.com:OpenJNY/hexo-katex-macros.git
 npm install --save ./hexo-katex-macro
 ```
 
@@ -39,7 +39,7 @@ E = m * c^2
 $$
 ```
 
-### Macro
+### Macros
 
 You can use macros to help writing math equations, which should be specified in '_config.yml'.
 
