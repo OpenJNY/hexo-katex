@@ -39,7 +39,7 @@ E = m * c^2
 $$
 ```
 
-## Macro
+### Macro
 
 You can use macros to help writing math equations, which should be specified in '_config.yml'.
 
