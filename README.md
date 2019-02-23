@@ -1,4 +1,4 @@
-# hexo-katex
+# hexo-katex-macro
 
 Use KaTeX to display math in Hexo sites.
 
@@ -11,10 +11,12 @@ pandoc:
   mathEngine: katex
 ```
 
-Then install hexo-katex.
+Then install hexo-katex-macro.
 
 ```
-npm install hexo-katex --save
+# cd your-hexo-project
+git submodule add https://github.com/OpenJNY/hexo-katex-macro
+npm install --save ./hexo-katex-macro
 ```
 
 KaTeX css link will be automatically injected into post, if you want to add it manually, modify `_config.yml`.
@@ -37,9 +39,9 @@ E = m * c^2
 $$
 ```
 
-## Macros
+## Macro
 
-You can use macors to help writing math equations, which should be specified in '_config.yml'.
+You can use macros to help writing math equations, which should be specified in '_config.yml'.
 
 ```
 katex:
