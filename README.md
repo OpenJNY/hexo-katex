@@ -15,8 +15,7 @@ Then install hexo-katex-macro.
 
 ```
 # cd your-hexo-project
-git submodule add git@github.com:OpenJNY/hexo-katex-macros.git
-npm install --save ./hexo-katex-macro
+npm install --save hexo-katex-macros
 ```
 
 KaTeX css link will be automatically injected into post, if you want to add it manually, modify `_config.yml`.
@@ -25,7 +24,6 @@ KaTeX css link will be automatically injected into post, if you want to add it m
 katex:
   css: false
 ```
-
 
 ## Writing
 
@@ -38,7 +36,6 @@ $$
 E = m * c^2
 $$
 ```
-
 ### Macros
 
 You can use macros to help writing math equations, which should be specified in '_config.yml'.

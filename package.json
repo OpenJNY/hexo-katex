@@ -1,21 +1,21 @@
 {
-  "name": "hexo-katex",
+  "name": "hexo-katex-macros",
   "version": "0.0.9",
   "description": "Use KaTeX to display math in Hexo sites.",
   "main": "index",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thcode/hexo-katex.git"
+    "url": "https://github.com/openjny/hexo-katex-macros.git"
   },
   "bugs": {
-    "url": "https://github.com/thcode/hexo-katex/issues"
+    "url": "https://github.com/openjny/hexo-katex-macros/issues"
   },
   "keywords": [
     "hexo",
     "katex",
     "filter"
   ],
-  "author": "Shuyu Liang <thinkingene@gmail.com> (http://thcode.com)",
+  "author": "OpenJNY (openjny@gmail.com)",
   "license": {
     "type": "MIT",
     "url": "https://raw.github.com/thcode/hexo-katex/master/LICENSE"
