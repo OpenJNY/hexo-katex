@@ -1,4 +1,4 @@
-# hexo-katex-macro
+# hexo-katex-macros
 
 Use KaTeX to display math in Hexo sites.
 
