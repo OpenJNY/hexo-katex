@@ -19,14 +19,15 @@ hexo.extend.filter.register('after_post_render', function (data) {
     macros = Object.assign({}, predefinedMacros, options.macros);
   }
 
-  var $ = cheerio.load(data.content, { decodeEntities: true });
+  var $ = cheerio.load(data.content, {
+    decodeEntities: true
+  });
 
   if ($('.math').length > 0) {
     linkTag = util.htmlTag('link', {
       rel: 'stylesheet',
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.css',
-      integrity:
-        'sha384-9tPv11A+glH/on/wEu99NVwDPwkMQESOocs/ZGXPoIiLE8MU/qkqUcZ3zzL+6DuH',
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css',
+      integrity: 'sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq',
       crossorigin: 'anonymous',
     });
   }
@@ -44,9 +45,9 @@ hexo.extend.filter.register('after_post_render', function (data) {
   $('.math.display').each(function () {
     // remove unnecessary characters "\[" and "\]"
     var html = katex.renderToString($(this).text().slice(2, -2), {
-        // throwOnError: false,
-        displayMode: true,
-        macros: macros
+      // throwOnError: false,
+      displayMode: true,
+      macros: macros
     });
 
     $(this).replaceWith(html);

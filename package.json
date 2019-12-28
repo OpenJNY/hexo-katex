@@ -18,11 +18,11 @@
   "author": "OpenJNY (openjny@gmail.com)",
   "license": {
     "type": "MIT",
-    "url": "https://raw.github.com/thcode/hexo-katex/master/LICENSE"
+    "url": "https://raw.github.com/openjny/hexo-katex-macros/master/LICENSE"
   },
   "dependencies": {
     "cheerio": "^0.22.0",
     "hexo-util": "^0.6.0",
-    "katex": "^0.10.0-beta"
+    "katex": "^0.11.1"
   }
 }
